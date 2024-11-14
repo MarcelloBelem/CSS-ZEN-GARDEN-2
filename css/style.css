@@ -43,6 +43,7 @@ body {
 
     nav > ul {
         display: flex;
+        justify-content: space-evenly;
         gap: 3px;
         background-color: #01014d;
         border-radius: 20px;
@@ -281,4 +282,41 @@ body {
 
 footer {
     display: none;
+}
+
+@media (min-width: 525px) {
+    .intro__banner {
+        h2 {
+            width: max-content;
+            padding: 20px 25px;
+            background-color: #e5cd85;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 40px;
+        }
+
+        p {
+            width: max-content;
+            padding: 20px 25px;
+            background-color: #e5cd85;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 40px;
+        }
+    }
+
+    .header__container {
+        h1 {
+            font-size: 4rem
+        }
+
+        nav > ul {
+            justify-content: space-evenly;
+
+            li {
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+        }
+    }
 }
