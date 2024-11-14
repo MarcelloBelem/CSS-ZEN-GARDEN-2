@@ -15,12 +15,17 @@
 .header__container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     background-color: var(--main-color);
     color: white;
 
     h1 {
-        margin-top: 20px;
+        width: max-content;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px 25px;
+        border-radius: 40px;
+        background-color: #01014d;
         font-size: 2rem;
         text-align: center;
         color: #E0AE1B;
@@ -28,6 +33,7 @@
 
     p {
         font-size: 0.8rem;
+        margin: 0 50px;
         text-align: center;
     }
 
@@ -79,5 +85,48 @@
 
     a {
         display: none;
+    }
+}
+
+.section__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #E0AE1B;
+        font-size: 3rem;
+    }
+
+    .about__grid {
+        margin-top: 20px;
+    }
+
+
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #e0cc91;
+    }
+
+    p {
+        margin: 0 40px;
+    }
+
+    .about__description {
+        margin-bottom: 40px;
+    }
+}
+
+.section--gallery {
+    background-color: var(--main-color);
+    
+    h2 {
+        text-align: center;
+        font-size: 3rem;
     }
 }
