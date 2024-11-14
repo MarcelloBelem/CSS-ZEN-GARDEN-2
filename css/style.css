@@ -41,6 +41,8 @@
 
         li {
             padding: 8px 10px;
+            font-size: 0.78rem;
+            font-weight: bolder;
 
             a {
                 text-decoration: none;
