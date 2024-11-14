@@ -2,6 +2,10 @@
     --main-color: #00001B;
 }
 
+body {
+    background-color: var(--main-color);
+}
+
 @font-face {
     font-family: T-Harry;
     src: url(/geral/HARRYP__.TTF);
@@ -124,9 +128,157 @@
 
 .section--gallery {
     background-color: var(--main-color);
-    
+
     h2 {
         text-align: center;
         font-size: 3rem;
+        color: #E0AE1B;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
+
+    .gallery__grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        figure {
+            img {
+                opacity: 0;
+            }
+
+            figcaption {
+                display: none;
+            }
+
+            button{
+                display: none;
+            }
+        }
+
+        figure:nth-child(1) {
+            background: url(/geral/casas/grifinoria.jpg) no-repeat;
+            background-size: contain;
+        }
+        figure:nth-child(2) {
+            background: url(/geral/casas/sonserina.jpg) no-repeat;
+            background-size: contain;
+        }
+        figure:nth-child(3) {
+            background: url(/geral/casas/corvinal.jpg) no-repeat;
+            background-size: contain;
+        }
+        figure:nth-child(4) {
+            background: url(/geral/casas/lufalufa.jpg) no-repeat;
+            background-size: contain;
+        }
+    }
+
+}
+
+.section--news {
+    background-color: var(--main-color);
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: #E0AE1B;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .news__grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .news__item {
+            color: white;
+
+            img {
+                opacity: 0;
+            }
+
+            .news__title {
+                display: none;
+            }
+
+            .news__summary {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        .news__item:nth-child(1) {
+            background: url(/geral/Personagens/harry\ potter.webp) no-repeat;
+            background-size: contain;
+        }
+        .news__item:nth-child(2) {
+            background: url(/geral/Personagens/rony\ wealey.webp) no-repeat;
+            background-size: contain;
+        }
+        .news__item:nth-child(3) {
+            background: url(/geral/Personagens/hermione.webp) no-repeat;
+            background-size: contain;
+        }
+        .news__item:nth-child(4) {
+            background: url(/geral/Personagens/draco\ malfoy.png) no-repeat;
+            background-size: contain;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section--contact > .section__content {
+    background: linear-gradient(to top , #01014d 80%, #00001B);
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .form__group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            label {
+                margin-right: 10px;
+                font-size: 1.7rem;
+            }
+
+            input {
+                width: 20ch;
+                font-size: 1.5rem;
+            }
+
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #E0AE1B;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        button:hover {
+            background-color: #ecbc2d;
+        }
+    }
+}
+
+footer {
+    display: none;
 }
