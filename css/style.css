@@ -7,6 +7,11 @@
     src: url(/geral/HARRYP__.TTF);
 }
 
+@font-face {
+    font-family: Mont;
+    src: url(/geral/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 .header__container {
     display: flex;
     flex-direction: column;
@@ -59,13 +64,18 @@
     background-size: cover;
 
     h2 {
+        margin-top: 30px;
         text-align: center;
         font-size: 3rem;
     }
 
     p {
-        margin-top: 450px;
+        margin: 400px 45px 0 45px;
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    a {
+        display: none;
     }
 }
